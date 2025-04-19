@@ -1,2 +1,2 @@
-# simple-portfolio
+# minimalistic-portfolio
 Faux Projects: A Minimalistic Portfolio
