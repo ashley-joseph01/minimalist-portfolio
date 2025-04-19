@@ -1,0 +1,57 @@
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SPECIFICS */
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    border: 5px solid red;
+
+}
+
+    .logo {
+
+        /* border: 5px solid palevioletred; */
+    }
+
+    nav {
+        display: flex;
+        padding: 10px;
+
+        /* border: 2px solid purple; */
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        
+    }
+
+
+.main {
+
+    border: 5px solid yellowgreen;
+}
+
+footer {
+
+    border: 5px solid blue;
+}
+
