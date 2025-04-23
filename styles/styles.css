@@ -1,3 +1,9 @@
+/* PALETTE: https://coolors.co/palette/ede0d4-e6ccb2-ddb892-b08968-7f5539-9c6644 */
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
 /* GENERAL */
 
@@ -6,24 +12,49 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    color: #7F5539;
-    background-color: #EDE0D4;
+    color: var(--text);
+    background-color: var(--background);
+
 }
 
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+
+    /* font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100; */
+
 }
 
 span {
     text-decoration: underline;
-    color: #b36f46;
+    color: var(--accent);
+
+        font-size: 25px;
+        font-family: "Reenie Beanie", cursive;
+        font-weight: 400;
+        font-style: normal;
 }
 
 img {
     height: 250px;
-    filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px var(--shadow));
 }
+
+.gap {
+    flex-grow: 1;
+}
+
 /* SPECIFICS */
 
 header {
@@ -44,7 +75,9 @@ header {
         align-items: center;
         padding: 15px;
         text-transform: uppercase;
-        color: #c77b4c;
+        color: var(--accent);
+
+
 
         /* border: 5px solid palevioletred; */
     }
@@ -70,7 +103,7 @@ header {
     }
 
     .current {
-        color: #c77b4c;
+        color: var(--accent);
     }
 
 
@@ -92,6 +125,11 @@ header {
         margin-top: 100px;
         margin-bottom: 250px;
 
+        font-family: "Reenie Beanie", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+        
         /* border: 2px solid grey; */
     }
 
@@ -113,10 +151,17 @@ header {
         padding: 15px;
     }
 
+        .section-txt {
+            font-size: 40px;
+            font-family: "Reenie Beanie", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
     .gbottom {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 15px;
     }
 
@@ -126,8 +171,8 @@ header {
             align-items: center;
             width: 100%;
             padding: 5px;
-            background-color: #EDE0D4;
-            border: solid 2px #e0ccba;
+            background-color: var(--altbackground);
+            border: solid 2px var(--altcontrast);
         }
 
     .container {
@@ -142,8 +187,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #EDE0D4;
-    border-top: solid 2px #e0ccba;
+    background-color: var(--altbackground);
+    border-top: solid 2px var(--altcontrast);
 
     padding-left: 200px;
     padding-right: 200px;
@@ -155,6 +200,7 @@ footer {
 }
 
     .bottom-left {
+        background-color: var(--altbackground);
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -162,19 +208,27 @@ footer {
 
     }
         .contact {
+            background-color: var(--altbackground);
             text-transform: uppercase;
             font-size: 20px;
         }
 
         .action-call {
-            font-size: 18px;
+            background-color: var(--altbackground);
+            font-size: 35px;
+
+            font-family: "Reenie Beanie", cursive;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .email {
+            background-color: var(--altbackground);
             font-size: 16px;
         }
 
     .bottom-right {
+        background-color: var(--altbackground);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -184,13 +238,17 @@ footer {
 
     }
 
-    .subtext {
+        .copywrite {
+            background-color: var(--altbackground);
+        }
 
-    }
+        .signature, .signature a, .signature span, .subtext a {
+            background-color: var(--altbackground);
+        }
 
     .subtext a {
         text-decoration: underline;
-        color: #b36f46;
+        color: var(--accent);
     }
 
     .about-main {
@@ -238,13 +296,35 @@ footer {
 
         }
 
+.list-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.list-main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 50px;
+    margin: 30px;
+    margin-bottom: 100px;
+
+    border: 2px solid var(--altcontrast);
+    border-radius: 30px;
+}
+
+.list-main li {
+    display: flex;
+    gap: 10px;
+}
 
 /* MEDIA QUERIES */
 
 @media(max-width: 768px){
-
-
 
     header,
     main,
