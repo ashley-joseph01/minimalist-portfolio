@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faux Projects: A Minimalistic Portfolio</title>
-    <link rel="stylesheet" href="../styles/stylesALT.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body onload="startTime()">
+    <script src="../scripts/scripts.js" type="text/javascript"></script>
+
     <header>
         <div class="logo">ashley joseph</div>
         <nav>
@@ -19,8 +21,22 @@
             </ul>
         </nav>
     </header>
-    <section class="main">
-
+    <section class="about-main">
+        <div class="left">
+            <div class="pic"><img src="../img/about-me.webp" alt="Headshot of Ashley Joseph"></div>
+            <div class="info-list">
+                <ul>
+                    <li>Status: <span>Accepting New Clients</span> </li>
+                    <li>Job: Freelance Full-Stack Web Dev</li>
+                    <li>Location: Utah, USA</li>
+                    <li id="time"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div id="time"></div>
+            <p class="about-me-blurb">This is some random about me text. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ducimus magni fugiat, cum esse nobis quasi modi voluptates possimus itaque placeat eius autem sunt eligendi incidunt atque voluptas iusto consectetur!</p>
+        </div>
     </section>
     <footer>
         <div class="bottom-left">
@@ -30,7 +46,7 @@
         </div>
         <div class="bottom-right">
             <p class="copywrite">© Ashley Joseph 2025</p>
-            <p class="signature"><a href="https://ashley-joseph01.github.io/my-page001/">Design & Code by <span>Ashley Joseph</span> </a></p>
+            <p class="signature"><a href="https://github.com/ashley-joseph01">Design & Code by <span>Ashley Joseph</span> </a></p>
         </div>
     </footer>
 </body>

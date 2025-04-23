@@ -102,14 +102,21 @@ header {
         align-items: center;
         gap: 30px;
         margin-bottom: 100px;
+        padding: 15px;
     }
 
     .gtop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 25px;
+        padding: 15px;
     }
 
     .gbottom {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 15px;
     }
 
@@ -123,7 +130,7 @@ header {
             border: solid 2px #e0ccba;
         }
 
-    .img-container {
+    .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -177,11 +184,102 @@ footer {
 
     }
 
+    .subtext {
+
+    }
+
+    .subtext a {
+        text-decoration: underline;
+        color: #b36f46;
+    }
+
+    .about-main {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: flex-start;
+        
+    }
+    
+        .left {
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 200px;
+            
+            /* border: 5px solid red; */
+        }
+
+    
+
+        .info-list ul {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 5px;
+            padding: 15px;
+
+            font-size: 15px;
+            
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 200px;
+            width: 500px;
+            font-size: 30px;
+            
+            /* border: 5px solid blue; */
+
+        }
+
 
 
 /* MEDIA QUERIES */
 
 @media(max-width: 768px){
+
+
+
+    header,
+    main,
+    footer {
+        display: flex;
+        margin: 15px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        width: 100vw;
+    }
+
+    .HERO {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 30px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gbottom {
+        /* flex-wrap: wrap; */
+    }
+
+    img {
+        height: 60px;
+    }
 
 
 }
