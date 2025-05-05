@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faux Projects: A Minimalistic Portfolio</title>
-    <link rel="stylesheet" href="../styles/light-theme.css">
-    <link rel="stylesheet" href="../styles/dark-theme.css">
+
+    <!-- <link rel="stylesheet" href="styles/light-theme.css"> -->
+    <link id="css-theme" rel="stylesheet" href="">
     <link rel="stylesheet" href="../styles/styles.css">
-    
+
     <script src="https://kit.fontawesome.com/29d5866cff.js" crossorigin="anonymous"></script>
+    <script src="../scripts/scripts.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <link rel="stylesheet" href="styles/styles.css">
+
+    <div class="loadingBackground"></div>
+
     <header>
         <div class="logo">ashley joseph</div>
         <nav>
@@ -21,6 +25,7 @@
                 <a href="../about-me/"><li>about me</li></a>
                 <a href="../links/"><li>links</li></a>
                 <a href="../contact/"><li class="current">contact</li></a>
+                <button id="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-sun"></i></button>
             </ul>
         </nav>
     </header>

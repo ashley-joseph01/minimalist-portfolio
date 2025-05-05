@@ -1,3 +1,7 @@
+.loadingBackground {
+    display: none;
+}
+
 :root {
     --background: #EDE0D4;
     --text: #7F5539;

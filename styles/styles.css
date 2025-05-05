@@ -66,6 +66,22 @@ button#theme-toggle {
 
 /* SPECIFICS */
 
+.loadingBackground {
+    height: 100%;
+    width: 100dvw;
+    z-index: 100000000;
+    position: fixed;
+    inset: 0;
+}
+
+@media (prefers-color-scheme: light) {
+    .loadingBackground { background-color: #EDE0D4; }
+}
+
+@media (prefers-color-scheme: dark) {
+    .loadingBackground { background-color: #7F5539; }
+}
+
 header {
     display: flex;
     justify-content: space-between;
